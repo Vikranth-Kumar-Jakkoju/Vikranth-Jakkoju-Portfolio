@@ -8,3 +8,16 @@
     margin: 40px;
     border-radius: 8px;
 }
+
+#Projects #section-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#Projects .Project {
+    background-color: #D2C4B4;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 8px;
+}
