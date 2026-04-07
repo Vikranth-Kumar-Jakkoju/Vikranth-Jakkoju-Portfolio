@@ -27,26 +27,29 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
+    align-items: center;
 }
 
 #TechnicalArsenal li {
     list-style-type: none;
     padding: auto;
+    padding: 3px;
 }
 
 #TechnicalArsenal .skill-container .skill {
     padding: 3px;
-    font-weight: bold;
     color: black;
-    background-color: #AACDDC;
     border-radius: 8px;
 }
 
-#TechnicalArsenal .skill-container .skill:hover {
-    background-color: #81A6C6;
+#TechnicalArsenal .skill-container .skill:hover a {
+    color: #81A6C6;
+    border: #81A6C6 solid;
+    border-radius: 6px;
 }
 
 #TechnicalArsenal .skill-container .skill a {
     color: black;
+    padding: 2px;
     text-decoration: none;
 }

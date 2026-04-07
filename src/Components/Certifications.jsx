@@ -77,7 +77,7 @@ function Certifications() {
         <>
             <section id='Certifications' className='section'>
                 <h1>Certifications</h1>
-                <p>The list of certifications I have done</p>
+                <h3>Professional Certifications & Achievements</h3>
                 <nav>
                     <ul>
                         {paginated.map(item => 
