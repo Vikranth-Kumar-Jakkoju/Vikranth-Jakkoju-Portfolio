@@ -1,0 +1,27 @@
+#AboutMe-container {
+    background-color: #F3E3D0;
+    padding: 15px;
+    margin: 40px;
+    border-radius: 8px;
+}
+
+fieldset {
+    background-color: #D2C4B4;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+}
+
+.fieldset-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+legend {
+    background-color: #F3E3D0;
+    border-radius: 5px;
+    padding: 5px;
+    border: black solid;
+}

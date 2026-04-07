@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+footer > nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10px;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer a:hover {
+    background-color: #D2C4B4;
+}
+
+footer svg {
+    height: 30px;
+    width: 30px;
+}

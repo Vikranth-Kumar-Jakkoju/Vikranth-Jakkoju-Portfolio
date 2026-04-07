@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Problem Solver - Bronze Badge - CodeChef",
+        "platform": "CodeChef",
+        "description": "Recognized for solving a significant volume of competitive programming challenges and demonstrating proficiency in core logic.",
+        "location": "/achievements/Problem Solver - Bronze Badge - CodeChef.png"
+    },
+    {
+        "name": "Daily Streak - Bronze Badge - CodeChef",
+        "platform": "CodeChef",
+        "description": "Awarded for maintaining a continuous daily solving streak, reflecting high persistence and dedication to technical improvement.",
+        "location": "/achievements/Bronze Streak Badge - CodeChef.png"
+    },
+    {
+        "name": "Solving Problems 100+ days in 2025 - LeetCode",
+        "platform": "LeetCode",
+        "description": "Demonstrated exceptional consistency and commitment to daily algorithmic problem-solving for over 100 days in 2025.",
+        "location": "/achievements/Solving Problems 100+ days in 2025 - LeetCode.png"
+    },
+    {
+        "name": "Solving Problems 50+ days in 2025 - LeetCode",
+        "platform": "LeetCode",
+        "description": "Maintained a disciplined coding routine by solving complex data structure and algorithm problems for over 50 days.",
+        "location": "/achievements/Solving Problems 50+ days in 2025 - LeetCode.png"
+    },
+    {
+        "name": "Solving Problems 50+ days in 2026 - LeetCode",
+        "platform": "LeetCode",
+        "description": "Continued a rigorous technical growth trajectory through consistent problem-solving and optimization practice in 2026.",
+        "location": "/achievements/Solving Problems 50+ days in 2026 - LeetCode.png"
+    },
+    {
+        "name": "Problem Solving Silver level - HackerRank",
+        "platform": "HackerRank",
+        "description": "Attained Silver status by mastering intermediate algorithms, data structures, and complex logical puzzles on the platform.",
+        "location": ""
+    },
+    {
+        "name": "C++ Bronze - HackerRank",
+        "platform": "HackerRank",
+        "description": "Certified foundational proficiency in C++, covering syntax, memory management, and Object-Oriented Programming principles.",
+        "location": ""
+    },
+    {
+        "name": "Python Bronze - HackerRank",
+        "platform": "HackerRank",
+        "description": "Validated core competency in Python, including familiarity with data types, control flow, and functional programming concepts.",
+        "location": ""
+    }
+]

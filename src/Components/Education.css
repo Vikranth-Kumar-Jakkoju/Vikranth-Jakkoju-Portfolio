@@ -1,0 +1,18 @@
+#Education {
+    background-color: #F3E3D0;
+    padding: 15px;
+    margin: 40px;
+    border-radius: 8px;
+}
+
+#Education li {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Education ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
