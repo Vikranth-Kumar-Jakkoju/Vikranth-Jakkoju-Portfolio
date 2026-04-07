@@ -42,11 +42,19 @@ function Modal({cert, onClose}) {
                     <div>
                         <img src={cert.location} alt="" style={{width: '100%', height: 'auto'}} />
                     </div>
-                    <p>{cert.cid? `Credential ID: ${cert.cid}` : ''}</p>
-                    <p>{cert.description? `About certificate: ${cert.description}` : ''}</p>
+                    {cert.cid && (
+                        <p>
+                            <b>Credential ID:</b> {cert.cid}
+                        </p>
+                    )}
+                    {cert.description && (
+                        <p>
+                            <b>About certificate:</b> cert.description
+                        </p>
+                    )}
                     {cert.clink && (
                         <p>
-                            Link to certificate: <a href={cert.clink} target="_blank" rel="noreferrer">Click here</a>
+                            <b>Link to certificate:</b> <a href={cert.clink} target="_blank" rel="noreferrer">Click here</a>
                         </p>
                     )}
                 </div>

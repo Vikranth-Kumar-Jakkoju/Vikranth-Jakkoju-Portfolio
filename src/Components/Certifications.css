@@ -54,3 +54,7 @@
 #Certifications a {
     color: black;
 }
+
+#Certifications .modal-container a {
+    color: blue;
+}

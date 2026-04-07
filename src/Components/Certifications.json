@@ -14,13 +14,6 @@
         "description": ""
     },
     {
-        "name": "Java Programming - Free Gurukul Education Foundation",
-        "location": "/certifications/Java Programming - Free Gurukul Education Foundation.jpg",
-        "cid": "FG035206",
-        "clink": "",
-        "description": ""
-    },
-    {
         "name": "Generative AI Mastermind - Outskill",
         "location": "/certifications/Generative AI Mastermind - Outskill.jpg",
         "cid": "",
@@ -42,129 +35,172 @@
         "description": ""
     },
     {
+        "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate - Oracle",
+        "location": "/certifications/Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate - Oracle.jpg",
+        "cid": "103430968OCI25AICFA",
+        "clink": "",
+        "description": "Recognized by Oracle Corporation as an Oracle Certified Foundations Associate [cite: 2, 8], demonstrating proficiency in AI concepts within the Oracle Cloud Infrastructure ecosystem[cite: 5]."
+    },
+    {
+        "name": "Explore Emerging Tech - IBM SkillsBuild",
+        "location": "/certifications/Explore Emerging Tech - IBM SkillsBuild.jpg",
+        "cid": "XTiSEZau",
+        "clink": "https://www.credly.com/go/XTiSEZau",
+        "description": "Issued by IBM SkillsBuild, this certification validates foundational knowledge in emerging technologies and their impact on the digital landscape[cite: 21, 22]."
+    },
+    {
+        "name": "MongoDB Associate Developer - MongoDB",
+        "location": "/certifications/MongoDB Associate Developer - MongoDB.jpg",
+        "cid": "YWxB27u2",
+        "clink": "https://www.credly.com/go/YWxB27u2",
+        "description": "Certified by MongoDB as an Associate Developer, demonstrating proficiency in building and maintaining applications using MongoDB[cite: 24, 30]."
+    },
+    {
         "name": "AI Impact Summit Buildathon - GUVI",
-        "location": "/certifications/AI Impact Summit Buildathon.jpg",
-        "cid": "",
+        "location": "/certifications/AI Impact Summit Buildathon - GUVI.png",
+        "cid": "52667x1y3X7Z18awze",
+        "clink": "https://www.guvi.in/share-certificate/52667x1y3X7Z18awze",
+        "description": ""
+    },
+    {
+        "name": "Java Programming - Free Gurukul Education Foundation",
+        "location": "/certifications/Java Programming - Free Gurukul Education Foundation.jpg",
+        "cid": "FG035206",
         "clink": "",
         "description": ""
     },
     {
         "name": "7 Steps to launch your Career in Data Science - GUVI",
-        "location": "/certifications/7 Steps to launch your Career in Data Science.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/7 Steps to launch your Career in Data Science - GUVI.png",
+        "cid": "4EBa6g67F13Y4Jz682",
+        "clink": "https://www.guvi.in/share-certificate/4EBa6g67F13Y4Jz682",
         "description": ""
     },
     {
         "name": "Decode Data Science - Tools, Skills & Mindset - GUVI",
-        "location": "/certifications/Decode Data Science - Tools, Skills & Mindset.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Decode Data Science - Tools, Skills & Mindset - GUVI.png",
+        "cid": "6681a31RIWsS9z18Y7",
+        "clink": "https://www.guvi.in/share-certificate/6681a31RIWsS9z18Y7",
         "description": ""
     },
     {
         "name": "Master Data Science & Machine Learning - GUVI",
-        "location": "/certifications/Master Data Science & Machine Learning.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Master Data Science & Machine Learning - GUVI.png",
+        "cid": "6G903y1441is9e7328",
+        "clink": "https://www.guvi.in/share-certificate/6G903y1441is9e7328",
         "description": ""
     },
     {
         "name": "Master Dashboard Creation using Power BI & Tableau - GUVI",
-        "location": "/certifications/Master Dashboard Creation using Power BI & Tableau.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Master Dashboard Creation using Power BI & Tableau - GUVI.png",
+        "cid": "168176MU30fp97O9YR",
+        "clink": "https://www.guvi.in/share-certificate/168176MU30fp97O9YR",
         "description": ""
     },
     {
         "name": "Master Generative AI – A Roadmap to a Successful Career - GUVI",
-        "location": "/certifications/Master Generative AI – A Roadmap to a Successful Career.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Master Generative AI – A Roadmap to a Successful Career - GUVI.png",
+        "cid": "d71T067a65y9z64MZJ",
+        "clink": "https://www.guvi.in/share-certificate/d71T067a65y9z64MZJ",
         "description": ""
     },
     {
         "name": "Next Gen Cloud DevOps Roadmap - GUVI",
-        "location": "/certifications/Next Gen Cloud DevOps Roadmap.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Next Gen Cloud DevOps Roadmap - GUVI.png",
+        "cid": "31Sv3D70Ag23075w0k",
+        "clink": "https://www.guvi.in/share-certificate/J93DTg76f617v75uc1",
         "description": ""
     },
     {
         "name": "Data Science & Machine Learning Roadmap for 2026 - GUVI",
-        "location": "/certifications/Data Science & Machine Learning Roadmap for 2026.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Data Science & Machine Learning Roadmap for 2026 - GUVI.png",
+        "cid": "79SwfY77U16q489l47",
+        "clink": "https://www.guvi.in/share-certificate/79SwfY77U16q489l47",
         "description": ""
     },
     {
         "name": "Decode Data Science & Machine Learning - GUVI",
-        "location": "/certifications/Decode Data Science & Machine Learning.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Decode Data Science & Machine Learning - GUVI.png",
+        "cid": "VL3T24blg1150x77z9",
+        "clink": "https://www.guvi.in/share-certificate/VL3T24blg1150x77z9",
         "description": ""
     },
     {
         "name": "Future Proof Your Career in the AI Era - GUVI",
-        "location": "/certifications/Future Proof Your Career in the AI Era.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Future Proof Your Career in the AI Era - GUVI.png",
+        "cid": "78YQy29Z09C357N717",
+        "clink": "https://www.guvi.in/share-certificate/78YQy29Z09C357N717",
         "description": ""
     },
     {
         "name": "Future-Proof Your Mechanical Engineering Career with CATIA - GUVI",
-        "location": "/certifications/Future-Proof Your Mechanical Engineering Career with CATIA.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Future-Proof Your Mechanical Engineering Career with CATIA - GUVI.png",
+        "cid": "fUH2j800S0L6r4J177",
+        "clink": "https://www.guvi.in/share-certificate/fUH2j800S0L6r4J177",
         "description": ""
     },
     {
         "name": "Build & Launch a Meta Ads Campaign - GUVI",
-        "location": "/certifications/Build & Launch a Meta Ads Campaign.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Build & Launch a Meta Ads Campaign - GUVI.png",
+        "cid": "YgO5S73E711Q148k94",
+        "clink": "https://www.guvi.in/share-certificate/YgO5S73E711Q148k94",
         "description": ""
     },
     {
         "name": "Data to Dashboards - PowerBI & Tableau - GUVI",
-        "location": "/certifications/Data to Dashboards - PowerBI & Tableau.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Data to Dashboards - PowerBI & Tableau - GUVI.png",
+        "cid": "7871I4rXe614y247u1",
+        "clink": "https://www.guvi.in/share-certificate/7871I4rXe614y247u1",
         "description": ""
     },
     {
         "name": "Begin Your Full Stack Journey - GUVI",
-        "location": "/certifications/Begin Your Full Stack Journey.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Begin Your Full Stack Journey - GUVI.png",
+        "cid": "7G9a77S1AN3s6Wr760",
+        "clink": "https://www.guvi.in/share-certificate/7G9a77S1AN3s6Wr760",
         "description": ""
     },
     {
         "name": "The 90-Minutes Data Analytics Workshop - GUVI",
-        "location": "/certifications/The 90-Minutes Data Analytics Workshop.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/The 90-Minutes Data Analytics Workshop - GUVI.png",
+        "cid": "73nf75aH3K81744207",
+        "clink": "https://www.guvi.in/share-certificate/73nf75aH3K81744207",
         "description": ""
     },
     {
         "name": "Meta Ads Campaign in Just 90 Minutes - GUVI",
-        "location": "/certifications/Meta Ads Campaign in Just 90 Minutes.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Meta Ads Campaign in Just 90 Minutes - GUVI.png",
+        "cid": "D37ti7041S71BA861h",
+        "clink": "https://www.guvi.in/share-certificate/D37ti7041S71BA861h",
         "description": ""
     },
     {
         "name": "Become a 360° Web Developer - GUVI",
-        "location": "/certifications/Become a 360° Web Developer.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Become a 360° Web Developer - GUVI.png",
+        "cid": "9tpoT42471sH5Q7236",
+        "clink": "https://www.guvi.in/share-certificate/9tpoT42471sH5Q7236",
         "description": ""
     },
     {
         "name": "Designing a Digital Payment System from Scratch - GUVI",
-        "location": "/certifications/Designing a Digital Payment System from Scratch.jpg",
-        "cid": "",
-        "clink": "",
+        "location": "/certifications/Designing a Digital Payment System from Scratch - GUVI.png",
+        "cid": "73Cr0847057wbA71py",
+        "clink": "https://www.guvi.in/share-certificate/73Cr0847057wbA71py",
+        "description": ""
+    },
+    {
+        "name": "The 90-Minutes Generative AI Workshop - Building Careers in AI & Machine Learning - GUVI",
+        "location": "/certifications/The 90-Minutes Generative AI Workshop - Building Careers in AI & Machine Learning - GUVI.png",
+        "cid": "341UE511ub7v7n7FZ5",
+        "clink": "https://www.guvi.in/share-certificate/341UE511ub7v7n7FZ5",
+        "description": ""
+    },
+    {
+        "name": "From 2D CAD to 3D BIM - The Digital Transformation in Civil Engineering - GUVI",
+        "location": "/certifications/From 2D CAD to 3D BIM - The Digital Transformation in Civil Engineering - GUVI.png",
+        "cid": "9k1H54qX727131315z",
+        "clink": "https://www.guvi.in/share-certificate/9k1H54qX727131315z",
         "description": ""
     }
 ]
+

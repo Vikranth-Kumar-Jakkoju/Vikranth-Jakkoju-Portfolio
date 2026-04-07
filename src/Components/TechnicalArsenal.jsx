@@ -37,8 +37,8 @@ function TechnicalArsenal() {
                         <h2>Platforms & Tools</h2>
                         <ul>
                             <li className='skill'><a href="https://leetcode.com/u/Vikranth_Kumar_Jakkoju/" target="_blank" rel="noreferrer">LeetCode</a></li>
-                            <li className='skill'><a href="#" target="_blank" rel="noreferrer">HackerRank</a></li>
-                            <li className='skill'><a href="#" target="_blank" rel="noreferrer">CodeChef</a></li>
+                            <li className='skill'><a href="https://www.hackerrank.com/profile/jakkojuvikranth" target="_blank" rel="noreferrer">HackerRank</a></li>
+                            <li className='skill'><a href="https://www.codechef.com/users/h5c_1512" target="_blank" rel="noreferrer">CodeChef</a></li>
                             <li>Git / GitHub</li>
                             <li>VS Code</li>
                             <li>Gen AI Prompting</li>
