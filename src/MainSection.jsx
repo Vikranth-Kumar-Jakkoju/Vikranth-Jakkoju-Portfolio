@@ -1,4 +1,4 @@
-import AboutMe from './Components/AboutMe.jsx'
+import About from './about/About.jsx';
 import TechnicalArsenal from './Components/TechnicalArsenal.jsx';
 import Projects from './Components/Projects.jsx';
 import Education from './Components/Education.jsx';
@@ -9,7 +9,7 @@ import Footer from './Components/Footer.jsx';
 function MainSection() {
     return (
         <>
-            <AboutMe></AboutMe>
+            <About />
             <TechnicalArsenal></TechnicalArsenal>
             <Projects></Projects>
             <Education></Education>

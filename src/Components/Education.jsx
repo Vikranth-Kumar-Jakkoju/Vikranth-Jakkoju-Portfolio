@@ -8,7 +8,7 @@ function Education() {
                 <ul>
                     <li>
                         <div className='left'>Chaitanya Bharathi Institute of Technology (CBIT)</div>
-                        <div className='right'>CGPA: 9.075/10 | 2024 – 2028</div>
+                        <div className='right'>CGPA: 9.19/10 | 2024 – 2028</div>
                     </li>
                     <li>
                         <div className='left'>Intermediate (Class XII)</div>
