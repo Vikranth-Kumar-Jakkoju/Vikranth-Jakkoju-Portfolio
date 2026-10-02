@@ -8,6 +8,9 @@ function SidebarNav({
   onNavigate,
   onOpenPalette,
   shortcutLabel,
+  onToggleTerminal,
+  isTerminalOpen,
+  terminalShortcutLabel,
 }) {
   const reducedMotion = usePrefersReducedMotion();
 
@@ -49,14 +52,30 @@ function SidebarNav({
           })}
         </ul>
       </nav>
-      <button
-        type="button"
-        className="file-tree__palette"
-        onClick={(event) => onOpenPalette(event.currentTarget)}
-      >
-        <span>Command palette</span>
-        <kbd>{shortcutLabel}</kbd>
-      </button>
+      <div className="file-tree__actions">
+        <button
+          type="button"
+          className="file-tree__action-btn"
+          onClick={(event) => onOpenPalette(event.currentTarget)}
+        >
+          <span>Command palette</span>
+          <kbd>{shortcutLabel}</kbd>
+        </button>
+        <button
+          type="button"
+          className={
+            isTerminalOpen
+              ? "file-tree__action-btn is-active"
+              : "file-tree__action-btn"
+          }
+          aria-expanded={isTerminalOpen}
+          aria-controls="developer-terminal"
+          onClick={(event) => onToggleTerminal?.(event.currentTarget)}
+        >
+          <span>&gt;_ Terminal</span>
+          <kbd>{terminalShortcutLabel}</kbd>
+        </button>
+      </div>
     </div>
   );
 }

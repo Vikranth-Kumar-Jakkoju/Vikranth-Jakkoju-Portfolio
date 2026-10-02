@@ -87,6 +87,16 @@ function Hero() {
     if (introDone || skipIntro) return undefined;
 
     const onKeyDown = (event) => {
+      const target = event.target;
+      if (
+        target instanceof HTMLElement &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.tagName === "SELECT" ||
+          target.isContentEditable)
+      ) {
+        return;
+      }
       if (event.ctrlKey || event.metaKey || event.altKey) return;
       if (event.key !== "Enter" && event.key !== " " && event.key !== "Escape") {
         return;
