@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import restoreTerminalFocus from "./focusRestore.js";
 import "./Terminal.css";
 
 function Terminal({
@@ -18,7 +19,7 @@ function Terminal({
   const inputRef = useRef(null);
   const outputRef = useRef(null);
 
-  // Return focus to trigger when closing
+  // Return focus to trigger when closing with robust fallback
   useEffect(() => {
     if (!isOpen) return undefined;
 
@@ -34,9 +35,25 @@ function Terminal({
 
     return () => {
       window.cancelAnimationFrame(animId);
-      returnTarget?.focus?.();
+      // Execute focus restoration after next render cycle when unmounted components/classes settle
+      window.requestAnimationFrame(() => {
+        restoreTerminalFocus(returnTarget);
+      });
     };
   }, [isOpen, triggerRef]);
+
+  // Close on Escape from anywhere while terminal is active
+  useEffect(() => {
+    if (!isOpen) return undefined;
+    const onGlobalKeyDown = (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", onGlobalKeyDown);
+    return () => window.removeEventListener("keydown", onGlobalKeyDown);
+  }, [isOpen, onClose]);
 
   // Auto-scroll output to bottom
   useEffect(() => {

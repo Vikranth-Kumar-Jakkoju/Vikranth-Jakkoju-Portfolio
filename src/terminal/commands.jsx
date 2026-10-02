@@ -211,26 +211,40 @@ export const commandRegistry = {
   resume: {
     name: "resume",
     description: "Open or download résumé",
-    execute: () => {
-      if (typeof window !== "undefined" && person.resumePath) {
-        window.open(person.resumePath, "_blank", "noopener,noreferrer");
-      }
-      return {
-        output: (
-          <div className="terminal-output__resume">
-            <p>Opening résumé in a new tab...</p>
+    execute: () => ({
+      output: (
+        <div className="terminal-output__resume">
+          <p className="terminal-output__warning">
+            [Notice] Résumé PDF is currently being updated.
+          </p>
+          <p className="terminal-output__sub">
+            {/* TODO: add resume.pdf to /public */}
+            Target: <code>{person.resumePath}</code> (pending upload).
+          </p>
+          <p className="terminal-output__text">
+            For inquiries or a verified copy of my CV, reach out at{" "}
+            <a
+              href={`mailto:${person.email}`}
+              className="terminal-output__link"
+            >
+              {person.email}
+            </a>{" "}
+            or view credentials via <code>experience</code> and{" "}
+            <code>certs</code>.
+          </p>
+          <div className="terminal-output__links">
             <a
               href={person.resumePath}
               target="_blank"
               rel="noopener noreferrer"
               className="terminal-output__link"
             >
-              Direct Link: {person.resumePath} ↗
+              [Direct link: {person.resumePath} ↗]
             </a>
           </div>
-        ),
-      };
-    },
+        </div>
+      ),
+    }),
   },
   contact: {
     name: "contact",

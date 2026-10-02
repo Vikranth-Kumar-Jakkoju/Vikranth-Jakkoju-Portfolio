@@ -69,6 +69,7 @@ function App() {
 
   return (
     <AppShell
+      isTerminalOpen={terminal.isOpen}
       mobileBar={
         <MobileBar
           menuOpen={mobileNavOpen}
@@ -99,23 +100,27 @@ function App() {
         onClose={palette.close}
         triggerRef={paletteTriggerRef}
       />
-      {!terminal.isOpen && (
-        <button
-          type="button"
-          className="terminal-dock-btn"
-          aria-expanded={false}
-          aria-controls="developer-terminal"
-          onClick={(event) => toggleTerminal(event.currentTarget)}
-        >
-          <span className="terminal-dock-btn__icon" aria-hidden="true">
-            &gt;_
-          </span>
-          <span className="terminal-dock-btn__label">Terminal</span>
-          <kbd className="terminal-dock-btn__kbd">
-            {terminalShortcutLabel()}
-          </kbd>
-        </button>
-      )}
+      <button
+        type="button"
+        className={
+          terminal.isOpen
+            ? "terminal-dock-btn is-hidden"
+            : "terminal-dock-btn"
+        }
+        aria-hidden={terminal.isOpen}
+        tabIndex={terminal.isOpen ? -1 : 0}
+        aria-expanded={terminal.isOpen}
+        aria-controls="developer-terminal"
+        onClick={(event) => toggleTerminal(event.currentTarget)}
+      >
+        <span className="terminal-dock-btn__icon" aria-hidden="true">
+          &gt;_
+        </span>
+        <span className="terminal-dock-btn__label">Terminal</span>
+        <kbd className="terminal-dock-btn__kbd">
+          {terminalShortcutLabel()}
+        </kbd>
+      </button>
       <Terminal
         isOpen={terminal.isOpen}
         onClose={terminal.close}

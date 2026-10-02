@@ -163,6 +163,19 @@ pre {
   }
 }
 
+/* While terminal is open, add bottom padding so page content and footer scroll fully clear */
+@media (max-width: 47.99rem) {
+  .app-shell.is-terminal-open .app-shell__content {
+    padding-bottom: calc(min(22rem, 46vh) + var(--space-8));
+  }
+}
+
+@media (min-width: 48rem) {
+  .app-shell.is-terminal-open .app-shell__content {
+    padding-bottom: calc(22rem + var(--space-8));
+  }
+}
+
 .skip-link {
   position: absolute;
   left: var(--space-4);

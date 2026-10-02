@@ -1,8 +1,19 @@
 import SkipLink from "./SkipLink.jsx";
 
-function AppShell({ mobileBar, nav, navOpen, onCloseNav, children }) {
+function AppShell({
+  mobileBar,
+  nav,
+  navOpen,
+  onCloseNav,
+  isTerminalOpen,
+  children,
+}) {
   return (
-    <div className="app-shell">
+    <div
+      className={
+        isTerminalOpen ? "app-shell is-terminal-open" : "app-shell"
+      }
+    >
       <div className="app-shell__nav-column">
         {mobileBar}
         {navOpen && (
