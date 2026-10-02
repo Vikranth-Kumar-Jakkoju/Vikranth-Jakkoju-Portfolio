@@ -123,6 +123,7 @@ export const skillGroups = [
       "CI/CD",
       "VS Code",
       "Postman",
+      "MS Office",
     ],
   },
 ];
