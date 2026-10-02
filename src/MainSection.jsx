@@ -1,5 +1,5 @@
 import About from './about/About.jsx';
-import TechnicalArsenal from './Components/TechnicalArsenal.jsx';
+import Skills from './skills/Skills.jsx';
 import Projects from './Components/Projects.jsx';
 import Certifications from './Components/Certifications.jsx';
 import Achievements from './Components/Achievements.jsx';
@@ -9,7 +9,7 @@ function MainSection() {
     return (
         <>
             <About />
-            <TechnicalArsenal></TechnicalArsenal>
+            <Skills />
             <Projects></Projects>
             <Certifications></Certifications>
             <Achievements></Achievements>
