@@ -22,6 +22,19 @@ export const person = {
   resumePath: "/resume.pdf", // TODO: add PDF to /public
 };
 
+/** Hero boot copy — keep short so the sequence stays under ~2.5s. */
+export const hero = {
+  bootLines: [
+    "$ boot vikranth.dev --fast",
+    "[ok] stack: react · node · mongodb",
+    "[ok] dsa --count 400+",
+  ],
+  tagline:
+    "I ship MERN apps, tinker with agents and RAG, and keep a 400+ problem LeetCode streak honest.",
+  primaryCta: { label: "View projects", href: "#Projects" },
+  secondaryCta: { label: "Download résumé", href: "/resume.pdf" },
+};
+
 export const links = {
   github: "https://github.com/Vikranth-Kumar-Jakkoju",
   linkedin:
@@ -232,6 +245,7 @@ export const sections = [
 const content = {
   site,
   person,
+  hero,
   links,
   summary,
   education,

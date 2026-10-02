@@ -1,4 +1,5 @@
 import AppShell from "./layout/AppShell.jsx";
+import Hero from "./hero/Hero.jsx";
 import MainSection from "./MainSection.jsx";
 
 /**
@@ -8,6 +9,7 @@ import MainSection from "./MainSection.jsx";
 function App() {
   return (
     <AppShell>
+      <Hero />
       <MainSection />
     </AppShell>
   );
