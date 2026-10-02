@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Achievements.css'
-import achievements from './Achievements.json'
+import { legacyAchievements as achievements } from '../data/achievements.js'
 
 function Pagination({total, pageSize, current, onChange}) {
     const totalPages = Math.ceil(total / pageSize);

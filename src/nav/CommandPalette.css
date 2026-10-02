@@ -1,0 +1,119 @@
+.palette {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12vh var(--space-4) var(--space-4);
+}
+
+.palette__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  padding: 0;
+  background: rgba(1, 4, 9, 0.72);
+  cursor: pointer;
+}
+
+.palette__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(32rem, 100%);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
+}
+
+.palette__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.palette__input {
+  width: 100%;
+  padding: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.palette__input:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom-color: var(--color-accent);
+}
+
+.palette__results {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-2);
+  max-height: min(50vh, 22rem);
+  overflow: auto;
+}
+
+.palette__group {
+  list-style: none;
+}
+
+.palette__group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.palette__group-label {
+  margin: var(--space-2) var(--space-2) var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.palette__option {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  text-align: left;
+  cursor: pointer;
+}
+
+.palette__option.is-active,
+.palette__option:hover {
+  background: var(--color-accent-muted);
+  color: var(--color-accent);
+}
+
+.palette__hint {
+  color: var(--color-text-subtle);
+  font-size: var(--text-xs);
+}
+
+.palette__empty {
+  padding: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
