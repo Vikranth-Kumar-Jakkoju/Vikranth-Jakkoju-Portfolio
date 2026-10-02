@@ -118,7 +118,8 @@ export const skillGroups = [
     id: "tools",
     label: "Tools",
     packages: [
-      "Git & GitHub",
+      "Git",
+      "GitHub",
       "Vercel",
       "CI/CD",
       "VS Code",
