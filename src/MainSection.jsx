@@ -1,7 +1,6 @@
 import About from './about/About.jsx';
 import TechnicalArsenal from './Components/TechnicalArsenal.jsx';
 import Projects from './Components/Projects.jsx';
-import Education from './Components/Education.jsx';
 import Certifications from './Components/Certifications.jsx';
 import Achievements from './Components/Achievements.jsx';
 import Footer from './Components/Footer.jsx';
@@ -12,7 +11,6 @@ function MainSection() {
             <About />
             <TechnicalArsenal></TechnicalArsenal>
             <Projects></Projects>
-            <Education></Education>
             <Certifications></Certifications>
             <Achievements></Achievements>
             <Footer></Footer>

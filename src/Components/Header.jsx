@@ -9,7 +9,7 @@ function Header() {
                     <a href="#AboutMe">About Me</a>
                     <a href="#TechnicalArsenal">Technical Arsenal</a>
                     <a href="#Projects">Projects</a>
-                    <a href="#Education">Education</a>
+                    <a href="#AboutEducation">Education</a>
                     <a href="#Certifications">Certifications</a>
                     <a href="#Achievements">Achievements</a>
                 </nav>

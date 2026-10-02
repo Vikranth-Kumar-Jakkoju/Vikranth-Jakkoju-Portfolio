@@ -378,9 +378,7 @@
 
 @media (max-width: 47.99rem) {
   .terminal-dock-btn {
-    bottom: var(--space-3);
-    right: var(--space-3);
-    padding: var(--space-1) var(--space-2);
+    display: none;
   }
 }
 
@@ -389,4 +387,3 @@
   pointer-events: none;
   visibility: hidden;
 }
-

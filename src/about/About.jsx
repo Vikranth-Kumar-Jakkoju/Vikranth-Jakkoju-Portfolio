@@ -80,7 +80,7 @@ function About() {
               Node.js, Express, and MongoDB—and I’m equally comfortable in Java
               or Python when the engineering problem calls for it. I care about
               responsive, keyboard-accessible UIs, clean system boundaries, and
-              building apps that don’t fall over in production.
+              maintainable code.
             </p>
 
             <p className="about__paragraph">
@@ -88,9 +88,9 @@ function About() {
               Bharathi Institute of Technology (CBIT), Hyderabad (
               <strong>CGPA: {education.cgpa}</strong>, {education.period}), I
               balance core CS fundamentals—OOP, DBMS, Operating Systems, and
-              Computer Networks—with rigorous daily problem solving:{" "}
-              <strong>400+ LeetCode problems</strong> conquered, backed by an
-              honest <strong>100+ day streak</strong> in 2025.
+              Computer Networks—with continued problem-solving practice:{" "}
+              <strong>400+ LeetCode problems solved</strong> and an honest{" "}
+              <strong>100+ day streak</strong> in 2025.
             </p>
 
             <p className="about__paragraph">
@@ -144,7 +144,7 @@ function About() {
         </div>
 
         {/* Folded-in Education Sub-panel */}
-        <div className="about__education-panel">
+        <div className="about__education-panel" id="AboutEducation">
           <div className="about__education-header">
             <span className="about__education-marker" aria-hidden="true">
               ##
@@ -170,22 +170,6 @@ function About() {
                   {education.coursework.join(" · ")}
                 </span>
               </div>
-            </div>
-
-            <div className="about__edu-item about__edu-item--secondary">
-              <div className="about__edu-top">
-                <span className="about__edu-degree">
-                  {education.secondary.label}
-                </span>
-                <span className="about__edu-period">
-                  {education.secondary.period}
-                </span>
-              </div>
-              <p className="about__edu-score">
-                <span className="about__edu-badge">
-                  Score: {education.secondary.score}
-                </span>
-              </p>
             </div>
           </div>
         </div>

@@ -59,11 +59,6 @@ export const education = {
     "Computer Networks",
     "Software Engineering",
   ],
-  secondary: {
-    label: "Intermediate (Class XII), Telangana State Board",
-    period: "2022 – 2024",
-    score: "96%",
-  },
 };
 
 export const skillGroups = [
@@ -244,13 +239,11 @@ export const certificationHighlights = [
 
 /**
  * Logical section id → current DOM id.
- * Update this map as each legacy section is rebuilt (typo #ContantMe lives until Step 9).
  */
 export const sectionAnchors = {
   hero: "hero",
   about: "AboutMe",
   skills: "TechnicalArsenal",
-  experience: "Education",
   projects: "Projects",
   leetcode: "Achievements",
   certifications: "Certifications",
@@ -262,12 +255,6 @@ export const sections = [
   { id: "hero", label: "Boot", file: "hero.jsx", command: "boot" },
   { id: "about", label: "About", file: "about.md", command: "whoami" },
   { id: "skills", label: "Skills", file: "skills.json", command: "skills" },
-  {
-    id: "experience",
-    label: "Experience",
-    file: "experience.log",
-    command: "experience",
-  },
   { id: "projects", label: "Projects", file: "projects/", command: "projects" },
   { id: "leetcode", label: "LeetCode", file: "leetcode.ts", command: "leetcode" },
   {
