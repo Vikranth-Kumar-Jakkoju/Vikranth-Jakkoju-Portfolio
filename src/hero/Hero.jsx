@@ -87,8 +87,11 @@ function Hero() {
     if (introDone || skipIntro) return undefined;
 
     const onKeyDown = (event) => {
-      // Keep Tab so keyboard users can reach the Skip control.
-      if (event.key === "Tab") return;
+      if (event.ctrlKey || event.metaKey || event.altKey) return;
+      if (event.key !== "Enter" && event.key !== " " && event.key !== "Escape") {
+        return;
+      }
+      event.preventDefault();
       completeIntro();
     };
 
@@ -125,7 +128,7 @@ function Hero() {
                 {index <= bootLineIndex ? line : "\u00a0"}
               </p>
             ))}
-            <p className="hero__boot-hint">Click, tap Skip, or press a key</p>
+            <p className="hero__boot-hint">Click, Skip, Enter, Space, or Esc</p>
           </div>
         </div>
       )}

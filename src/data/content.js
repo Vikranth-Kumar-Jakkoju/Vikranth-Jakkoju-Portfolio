@@ -30,7 +30,7 @@ export const hero = {
     "[ok] dsa --count 400+",
   ],
   tagline:
-    "I ship MERN apps, tinker with agents and RAG, and keep a 400+ problem LeetCode streak honest.",
+    "I build full-stack apps, train on agentic AI, and have solved 400+ LeetCode problems.",
   primaryCta: { label: "View projects", href: "#Projects" },
   secondaryCta: { label: "Download résumé", href: "/resume.pdf" },
 };
@@ -187,6 +187,18 @@ export const projects = [
     repoUrl: "https://github.com/Vikranth-Kumar-Jakkoju/CoffeeMachineProject",
     liveUrl: null,
   },
+  {
+    id: "study-planner",
+    name: "Interactive Study Planner",
+    tagline: "Personalized academic management web app",
+    description:
+      "Responsive study planner for semester progress, subject-wise workload, exam timetables, and batch schedules — built for a busy semester instead of scattered notes.",
+    stack: ["HTML5", "CSS3", "JavaScript"],
+    repoUrl:
+      "https://github.com/Vikranth-Kumar-Jakkoju/Interactive-Study-Planner-Website",
+    liveUrl:
+      "https://vikranth-kumar-jakkoju.github.io/Interactive-Study-Planner-Website/",
+  },
 ];
 
 export const leetcode = {
@@ -230,16 +242,93 @@ export const certificationHighlights = [
   "IBM SkillsBuild · GUVI (Data Science & ML, GenAI, Power BI & Tableau, Full Stack)",
 ];
 
+/**
+ * Logical section id → current DOM id.
+ * Update this map as each legacy section is rebuilt (typo #ContantMe lives until Step 9).
+ */
+export const sectionAnchors = {
+  hero: "hero",
+  about: "AboutMe",
+  skills: "TechnicalArsenal",
+  experience: "Education",
+  projects: "Projects",
+  leetcode: "Achievements",
+  certifications: "Certifications",
+  contact: "ContantMe",
+};
+
 /** Section anchors for nav, command palette, and terminal (Steps 3+). */
 export const sections = [
-  { id: "hero", label: "Boot", command: "boot" },
-  { id: "about", label: "About", command: "whoami" },
-  { id: "skills", label: "Skills", command: "skills" },
-  { id: "experience", label: "Experience", command: "experience" },
-  { id: "projects", label: "Projects", command: "projects" },
-  { id: "leetcode", label: "LeetCode", command: "leetcode" },
-  { id: "certifications", label: "Certifications", command: "certs" },
-  { id: "contact", label: "Contact", command: "contact" },
+  { id: "hero", label: "Boot", file: "hero.jsx", command: "boot" },
+  { id: "about", label: "About", file: "about.md", command: "whoami" },
+  { id: "skills", label: "Skills", file: "skills.json", command: "skills" },
+  {
+    id: "experience",
+    label: "Experience",
+    file: "experience.log",
+    command: "experience",
+  },
+  { id: "projects", label: "Projects", file: "projects/", command: "projects" },
+  { id: "leetcode", label: "LeetCode", file: "leetcode.ts", command: "leetcode" },
+  {
+    id: "certifications",
+    label: "Certifications",
+    file: "certs/",
+    command: "certs",
+  },
+  { id: "contact", label: "Contact", file: "contact.sh", command: "contact" },
+];
+
+/** Command palette rows — sections plus public links only (no phone). */
+export const paletteItems = [
+  ...sections.map((section) => ({
+    id: `jump-${section.id}`,
+    group: "Jump to",
+    label: section.label,
+    hint: section.command,
+    href: `#${sectionAnchors[section.id]}`,
+    external: false,
+  })),
+  {
+    id: "link-github",
+    group: "Open",
+    label: "GitHub",
+    hint: "github.com",
+    href: links.github,
+    external: true,
+  },
+  {
+    id: "link-linkedin",
+    group: "Open",
+    label: "LinkedIn",
+    hint: "linkedin.com",
+    href: links.linkedin,
+    external: true,
+  },
+  {
+    id: "link-leetcode",
+    group: "Open",
+    label: "LeetCode",
+    hint: "leetcode.com",
+    href: links.leetcode,
+    external: true,
+  },
+  {
+    id: "link-email",
+    group: "Open",
+    label: "Email",
+    hint: person.email,
+    href: `mailto:${person.email}`,
+    external: false,
+  },
+  {
+    id: "link-resume",
+    group: "Open",
+    label: "Download résumé",
+    hint: "resume.pdf",
+    href: person.resumePath,
+    external: false,
+  },
 ];
 
 const content = {
@@ -256,7 +345,9 @@ const content = {
   hackathonsAndEvents,
   achievementHighlights,
   certificationHighlights,
+  sectionAnchors,
   sections,
+  paletteItems,
 };
 
 export default content;
