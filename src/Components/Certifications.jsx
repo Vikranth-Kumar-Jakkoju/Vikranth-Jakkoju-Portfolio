@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './Certifications.css'
-import certificates from './Certifications.json'
+import { legacyCertifications as certificates } from '../data/certifications.js'
 
 function Pagination({total, pageSize, current, onChange}) {
     const totalPages = Math.ceil(total / pageSize);
@@ -49,7 +49,7 @@ function Modal({cert, onClose}) {
                     )}
                     {cert.description && (
                         <p>
-                            <b>About certificate:</b> cert.description
+                            <b>About certificate:</b> {cert.description}
                         </p>
                     )}
                     {cert.clink && (
