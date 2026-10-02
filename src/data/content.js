@@ -108,7 +108,7 @@ export const skillGroups = [
     label: "AI, Cloud & Automation",
     packages: [
       "Generative AI (NPTEL)",
-      "Agentic AI (ServiceNow)",
+      "Agentic AI (ServiceNow training)",
       "Oracle Cloud AI Foundations",
       "Google Cloud",
       "Pega low-code",

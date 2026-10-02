@@ -3,15 +3,14 @@ import useScrollReveal from "../hooks/useScrollReveal.js";
 import "./Skills.css";
 
 function parseSkillPackage(pkg) {
-  // Check for credentials in parentheses e.g. (Associate Certified), (NPTEL), (ServiceNow)
+  // Check for credentials in parentheses e.g. (Associate Certified), (NPTEL)
   const match = pkg.match(/^(.*?)\s*\((.*?)\)$/);
   if (match) {
     const rawName = match[1];
     const tag = match[2];
     if (
       tag.toLowerCase().includes("certified") ||
-      tag === "NPTEL" ||
-      tag === "ServiceNow"
+      tag === "NPTEL"
     ) {
       return {
         name: rawName,
