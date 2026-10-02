@@ -17,8 +17,15 @@ function CommandPalette({ isOpen, onClose, triggerRef }) {
   const labelId = useId();
   const inputRef = useRef(null);
   const dialogRef = useRef(null);
+  const activeOptionRef = useRef(null);
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    if (isOpen && activeOptionRef.current) {
+      activeOptionRef.current.scrollIntoView({ block: "nearest" });
+    }
+  }, [activeIndex, isOpen]);
 
   const filtered = useMemo(
     () => paletteItems.filter((item) => matchesQuery(item, query)),
@@ -57,6 +64,11 @@ function CommandPalette({ isOpen, onClose, triggerRef }) {
   useEffect(() => {
     if (!isOpen) return undefined;
 
+    const returnTarget =
+      triggerRef?.current ||
+      (document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null);
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     const focusId = window.requestAnimationFrame(() => {
@@ -66,7 +78,7 @@ function CommandPalette({ isOpen, onClose, triggerRef }) {
     return () => {
       window.cancelAnimationFrame(focusId);
       document.body.style.overflow = previousOverflow;
-      triggerRef?.current?.focus?.();
+      returnTarget?.focus?.();
     };
   }, [isOpen, triggerRef]);
 
@@ -152,6 +164,9 @@ function CommandPalette({ isOpen, onClose, triggerRef }) {
           ref={inputRef}
           className="palette__input"
           type="text"
+          role="combobox"
+          aria-expanded="true"
+          aria-autocomplete="list"
           value={query}
           onChange={(event) => {
             setQuery(event.target.value);
@@ -177,6 +192,7 @@ function CommandPalette({ isOpen, onClose, triggerRef }) {
                   return (
                     <li key={item.id} role="none">
                       <button
+                        ref={isActive ? activeOptionRef : undefined}
                         type="button"
                         role="option"
                         tabIndex={-1}
