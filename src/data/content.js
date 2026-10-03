@@ -132,23 +132,30 @@ export const skillGroups = [
 export const experience = [
   {
     id: "pega-trainee",
-    hash: "a1b2c3d",
+    decorativeHash: "pega~01",
+    hash: "pega~01",
     role: "Industrial Trainee",
-    org: "Pegasystems × SmartBridge (AICTE NEAT)",
+    org: "Pegasystems × SmartBridge (National Internship Program)",
     period: "Aug – Sep 2026",
+    dateTime: "2026-08/2026-09",
+    certId: "PEGA-SW-NIP-2026-134",
+    tags: ["AICTE NEAT", "National Internship Program"],
     bullets: [
-      "60 hours of training in low-code workflow automation and enterprise process design on Pega.",
+      "60 hours of training in low-code workflow automation and enterprise process design on Pega; sponsored by Pegasystems with SmartBridge and AICTE's NEAT Cell.",
     ],
   },
   {
     id: "servicenow-intern",
-    hash: "e4f5g6h",
+    decorativeHash: "snu~01",
+    hash: "snu~01",
     role: "Virtual Intern",
     org: "ServiceNow University (AICTE × SmartBridge)",
     period: "Jul 2026",
+    dateTime: "2026-07",
+    certId: "SNU2027984",
+    tags: ["AICTE × SmartBridge", "Micro Certification"],
     bullets: [
-      "ServiceNow Administration, Agentic AI, Flows, ATF, and Reports.",
-      "Earned ServiceNow Micro Certification.",
+      "ServiceNow Administration, Agentic AI, Introduction to Flows, Automated Test Framework (ATF), Reports; earned a ServiceNow Micro Certification.",
     ],
   },
 ];
@@ -246,6 +253,7 @@ export const sectionAnchors = {
   hero: "hero",
   about: "AboutMe",
   skills: "TechnicalArsenal",
+  experience: "Experience",
   projects: "Projects",
   leetcode: "Achievements",
   certifications: "Certifications",
@@ -257,6 +265,12 @@ export const sections = [
   { id: "hero", label: "Boot", file: "hero.jsx", command: "boot" },
   { id: "about", label: "About", file: "about.md", command: "whoami" },
   { id: "skills", label: "Skills", file: "skills.json", command: "skills" },
+  {
+    id: "experience",
+    label: "Experience",
+    file: "experience.log",
+    command: "experience",
+  },
   { id: "projects", label: "Projects", file: "projects/", command: "projects" },
   { id: "leetcode", label: "LeetCode", file: "leetcode.ts", command: "leetcode" },
   {

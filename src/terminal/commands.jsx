@@ -137,26 +137,44 @@ export const commandRegistry = {
   experience: {
     name: "experience",
     description: "View experience timeline and internships",
-    execute: () => ({
-      output: (
-        <div className="terminal-output__experience">
-          <p className="terminal-output__title">Experience & Internships:</p>
-          {experience.map((item) => (
-            <div key={item.id} className="terminal-output__item">
-              <p className="terminal-output__highlight">
-                {item.role} @ {item.org}{" "}
-                <span className="terminal-output__sub">({item.period})</span>
-              </p>
-              <ul className="terminal-output__list">
-                {item.bullets.map((bullet, idx) => (
-                  <li key={idx}>{bullet}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      ),
-    }),
+    execute: (_args, { reducedMotion } = {}) => {
+      if (typeof window !== "undefined") {
+        setTimeout(() => {
+          scrollToSection(`#${sectionAnchors.experience}`, reducedMotion);
+        }, 100);
+      }
+      return {
+        output: (
+          <div className="terminal-output__experience">
+            <p className="terminal-output__title">
+              Experience &amp; Internships (git log):
+            </p>
+            {experience.map((item) => (
+              <div key={item.id} className="terminal-output__item">
+                <p className="terminal-output__highlight">
+                  <span className="terminal-output__accent" aria-hidden="true">
+                    * commit {item.decorativeHash || item.hash}
+                  </span>{" "}
+                  {item.role} @ {item.org}{" "}
+                  <span className="terminal-output__sub">({item.period})</span>
+                </p>
+                {item.certId && (
+                  <p className="terminal-output__meta">
+                    <span className="terminal-output__label">Cert ID:</span>{" "}
+                    <code>{item.certId}</code>
+                  </p>
+                )}
+                <ul className="terminal-output__list">
+                  {item.bullets.map((bullet, idx) => (
+                    <li key={idx}>{bullet}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ),
+      };
+    },
   },
   certs: {
     name: "certs",
