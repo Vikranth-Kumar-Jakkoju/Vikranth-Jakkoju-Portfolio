@@ -59,11 +59,6 @@ export const education = {
     "Computer Networks",
     "Software Engineering",
   ],
-  secondary: {
-    label: "Intermediate (Class XII), Telangana State Board",
-    period: "2022 – 2024",
-    score: "96%",
-  },
 };
 
 export const skillGroups = [
@@ -113,7 +108,7 @@ export const skillGroups = [
     label: "AI, Cloud & Automation",
     packages: [
       "Generative AI (NPTEL)",
-      "Agentic AI (ServiceNow)",
+      "Agentic AI (ServiceNow training)",
       "Oracle Cloud AI Foundations",
       "Google Cloud",
       "Pega low-code",
@@ -123,11 +118,13 @@ export const skillGroups = [
     id: "tools",
     label: "Tools",
     packages: [
-      "Git & GitHub",
+      "Git",
+      "GitHub",
       "Vercel",
       "CI/CD",
       "VS Code",
       "Postman",
+      "MS Office",
     ],
   },
 ];
@@ -135,23 +132,30 @@ export const skillGroups = [
 export const experience = [
   {
     id: "pega-trainee",
-    hash: "a1b2c3d",
+    decorativeHash: "pega~01",
+    hash: "pega~01",
     role: "Industrial Trainee",
-    org: "Pegasystems × SmartBridge (AICTE NEAT)",
+    org: "Pegasystems × SmartBridge (National Internship Program)",
     period: "Aug – Sep 2026",
+    dateTime: "2026-08",
+    certId: "PEGA-SW-NIP-2026-134",
+    tags: ["AICTE NEAT", "National Internship Program"],
     bullets: [
-      "60 hours of training in low-code workflow automation and enterprise process design on Pega.",
+      "60 hours of training in low-code workflow automation and enterprise process design on Pega; sponsored by Pegasystems with SmartBridge and AICTE's NEAT Cell.",
     ],
   },
   {
     id: "servicenow-intern",
-    hash: "e4f5g6h",
+    decorativeHash: "snu~01",
+    hash: "snu~01",
     role: "Virtual Intern",
     org: "ServiceNow University (AICTE × SmartBridge)",
     period: "Jul 2026",
+    dateTime: "2026-07",
+    certId: "SNU2027984",
+    tags: ["AICTE × SmartBridge", "Micro Certification"],
     bullets: [
-      "ServiceNow Administration, Agentic AI, Flows, ATF, and Reports.",
-      "Earned ServiceNow Micro Certification.",
+      "ServiceNow Administration, Agentic AI, Introduction to Flows, Automated Test Framework (ATF), Reports; earned a ServiceNow Micro Certification.",
     ],
   },
 ];
@@ -160,36 +164,41 @@ export const projects = [
   {
     id: "foodexpress",
     name: "FoodExpress",
+    repoFullName: "Vikranth-Kumar-Jakkoju/foodexpress",
     tagline: "MERN food delivery platform",
     description:
-      "End-to-end food delivery app: menu browsing, cart, orders, JWT auth, and modular REST APIs with full MongoDB CRUD.",
-    stack: ["React", "Node.js", "Express", "MongoDB", "JWT", "REST"],
+      "Menu browsing, cart, order management, JWT-based auth, and modular RESTful APIs with full MongoDB CRUD.",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "REST API"],
     repoUrl: "https://github.com/Vikranth-Kumar-Jakkoju/foodexpress",
-    liveUrl: null, // TODO: add live demo if deployed
+    liveUrl: null,
   },
   {
     id: "portfolio",
     name: "Personal Portfolio",
+    repoFullName: "Vikranth-Kumar-Jakkoju/Vikranth-Jakkoju-Portfolio",
     tagline: "React + Vite SPA on Vercel",
     description:
-      "This site — React SPA with CI/CD on Vercel. Currently getting a terminal-themed UI overhaul.",
-    stack: ["React", "Vite", "CSS", "Vercel", "CI/CD"],
+      "Responsive single-page application with automated CI/CD deployments via GitHub.",
+    stack: ["React.js", "Vite", "JavaScript", "CSS3", "Vercel", "CI/CD"],
     repoUrl: "https://github.com/Vikranth-Kumar-Jakkoju/Vikranth-Jakkoju-Portfolio",
     liveUrl: "https://vikranth-jakkoju-portfolio.vercel.app",
   },
   {
     id: "coffee-machine",
     name: "Coffee Machine Simulator",
+    repoFullName: "Vikranth-Kumar-Jakkoju/CoffeeMachineProject",
     tagline: "Java OOP capstone-style project",
     description:
-      "Coffee machine simulation using encapsulation, inheritance, and polymorphism — the OOP trilogy, caffeinated.",
-    stack: ["Java", "OOP"],
+      "Multi-class architecture simulating coffee brewing using core OOP principles: encapsulation, inheritance, and polymorphism.",
+    stack: ["Java", "OOP", "Multi-Class Architecture"],
     repoUrl: "https://github.com/Vikranth-Kumar-Jakkoju/CoffeeMachineProject",
     liveUrl: null,
   },
   {
     id: "study-planner",
     name: "Interactive Study Planner",
+    repoFullName:
+      "Vikranth-Kumar-Jakkoju/Interactive-Study-Planner-Website",
     tagline: "Personalized academic management web app",
     description:
       "Responsive study planner for semester progress, subject-wise workload, exam timetables, and batch schedules — built for a busy semester instead of scattered notes.",
@@ -219,14 +228,52 @@ export const hackathonsAndEvents = [
   "CBIT COSC Hackweek (Jul 2026)",
   "AI Impact Summit Buildathon",
   "Google Solution Challenge 2026",
+  "HICON Club and COSC at CBIT",
+];
+
+export const codingProfiles = [
+  {
+    id: "leetcode",
+    name: "LeetCode",
+    badge: "100+ Day Streak (2025)",
+    stats: "400+ Problems Solved",
+    sub: "Active streak in 2025; 50+ day badges in 2025 & 2026",
+    badges: [
+      "100+ Day Streak (2025)",
+      "50+ Day Badge (2025)",
+      "50+ Day Badge (2026)",
+    ],
+    profileUrl: links.leetcode,
+    icon: "⚡",
+  },
+  {
+    id: "hackerrank",
+    name: "HackerRank",
+    badge: "Silver Level",
+    stats: "Problem Solving Silver",
+    sub: "Python · C++ badges",
+    badges: ["Problem Solving Silver", "Python Badge", "C++ Badge"],
+    profileUrl: links.hackerrank,
+    icon: "★",
+  },
+  {
+    id: "codechef",
+    name: "CodeChef",
+    badge: "CodeChef Bronze",
+    stats: "Bronze Badge",
+    sub: "Problem Solver & 5-day streak badges",
+    badges: ["Problem Solver Bronze", "CodeChef Bronze"],
+    profileUrl: links.codechef,
+    icon: "◈",
+  },
 ];
 
 export const achievementHighlights = [
   "400+ LeetCode problems solved",
   "100+ day LeetCode streak (2025)",
   "50+ day LeetCode badges (2025, 2026)",
-  "HackerRank Silver (Problem Solving); Python & C++ badges",
-  "CodeChef Bronze badges",
+  "HackerRank Silver (Problem Solving); Python · C++ badges",
+  "CodeChef Bronze",
   "HICON Club & COSC, CBIT",
 ];
 
@@ -244,17 +291,29 @@ export const certificationHighlights = [
 
 /**
  * Logical section id → current DOM id.
- * Update this map as each legacy section is rebuilt (typo #ContantMe lives until Step 9).
  */
 export const sectionAnchors = {
   hero: "hero",
   about: "AboutMe",
   skills: "TechnicalArsenal",
-  experience: "Education",
+  experience: "Experience",
   projects: "Projects",
-  leetcode: "Achievements",
+  leetcode: "LeetCode",
   certifications: "Certifications",
-  contact: "ContantMe",
+  contact: "Contact",
+};
+
+export const contact = {
+  file: "contact.sh",
+  command: "contact",
+  heading: "Get in Touch",
+  subhead:
+    "Open to software engineering internships, entry-level full stack roles, and collaborative projects.",
+  cta: "Whether you have an engineering opportunity, a question about my work, or want to discuss full-stack & AI architecture — my inbox is always open.",
+  location: "Hyderabad, Telangana",
+  email: person.email,
+  resumePath: person.resumePath,
+  status: "Open to software engineering opportunities",
 };
 
 /** Section anchors for nav, command palette, and terminal (Steps 3+). */
@@ -273,7 +332,7 @@ export const sections = [
   {
     id: "certifications",
     label: "Certifications",
-    file: "certs/",
+    file: "certifications/",
     command: "certs",
   },
   { id: "contact", label: "Contact", file: "contact.sh", command: "contact" },
@@ -342,12 +401,14 @@ const content = {
   experience,
   projects,
   leetcode,
+  codingProfiles,
   hackathonsAndEvents,
   achievementHighlights,
   certificationHighlights,
   sectionAnchors,
   sections,
   paletteItems,
+  contact,
 };
 
 export default content;

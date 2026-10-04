@@ -1,21 +1,21 @@
-import AboutMe from './Components/AboutMe.jsx'
-import TechnicalArsenal from './Components/TechnicalArsenal.jsx';
-import Projects from './Components/Projects.jsx';
-import Education from './Components/Education.jsx';
-import Certifications from './Components/Certifications.jsx';
-import Achievements from './Components/Achievements.jsx';
-import Footer from './Components/Footer.jsx';
+import About from './about/About.jsx';
+import Skills from './skills/Skills.jsx';
+import Experience from './experience/Experience.jsx';
+import Projects from './projects/Projects.jsx';
+import LeetCode from './leetcode/LeetCode.jsx';
+import Certifications from './certifications/Certifications.jsx';
+import Contact from './contact/Contact.jsx';
 
 function MainSection() {
     return (
         <>
-            <AboutMe></AboutMe>
-            <TechnicalArsenal></TechnicalArsenal>
-            <Projects></Projects>
-            <Education></Education>
-            <Certifications></Certifications>
-            <Achievements></Achievements>
-            <Footer></Footer>
+            <About />
+            <Skills />
+            <Experience />
+            <Projects />
+            <LeetCode />
+            <Certifications />
+            <Contact />
         </>
     );
 }

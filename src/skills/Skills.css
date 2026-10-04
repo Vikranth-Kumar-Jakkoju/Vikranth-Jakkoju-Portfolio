@@ -1,0 +1,248 @@
+/* Skills Section — package.json terminal styling */
+.skills-section {
+  margin: var(--space-12) 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skills-section.is-hidden {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  .skills-section.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity var(--transition-base), transform var(--transition-base);
+  }
+}
+
+/* Window Header */
+.skills__window-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  user-select: none;
+}
+
+.skills__window-dots {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.skills__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.skills__dot--red {
+  background: #ff5f56;
+}
+
+.skills__dot--yellow {
+  background: #ffbd2e;
+}
+
+.skills__dot--green {
+  background: #27c93f;
+}
+
+.skills__window-title {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.skills__window-badge {
+  font-size: var(--text-xs);
+  color: var(--color-text-subtle);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 1px var(--space-2);
+}
+
+/* Window Body */
+.skills__window-body {
+  padding: var(--space-6);
+}
+
+@media (max-width: 47.99rem) {
+  .skills__window-body {
+    padding: var(--space-4);
+  }
+}
+
+/* Meta Prompt */
+.skills__prompt-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+.skills__prompt {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.skills__cmd {
+  color: var(--color-text-muted);
+}
+
+.skills__header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.skills__heading {
+  margin: 0;
+  font-size: var(--text-2xl);
+  color: var(--color-text);
+}
+
+.skills__tagline {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-subtle);
+}
+
+/* Code Editor Container */
+.skills__code-container {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 47.99rem) {
+  .skills__code-container {
+    padding: var(--space-3);
+    font-size: var(--text-xs);
+  }
+}
+
+/* Lines & Indentation */
+.skills__line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px;
+  word-break: break-word;
+}
+
+.skills__indent-1 {
+  padding-left: var(--space-4);
+}
+
+.skills__indent-2 {
+  padding-left: var(--space-8);
+}
+
+@media (max-width: 47.99rem) {
+  .skills__indent-1 {
+    padding-left: var(--space-2);
+  }
+
+  .skills__indent-2 {
+    padding-left: var(--space-4);
+  }
+}
+
+/* Groups and Lists */
+.skills__group-heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.skills__group-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Syntax Highlighting */
+.skills__punct {
+  color: var(--color-text-muted);
+}
+
+.skills__key {
+  color: var(--color-info);
+  font-weight: 500;
+}
+
+.skills__pkg-name {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.skills__val {
+  color: var(--color-accent);
+}
+
+.skills__pkg-val {
+  color: var(--color-accent);
+}
+
+.skills__pkg-val--credential {
+  color: var(--color-accent-hover);
+  font-weight: 600;
+}
+
+.skills__bool {
+  color: var(--color-warning);
+}
+
+.skills__comment {
+  color: var(--color-text-subtle);
+  font-style: italic;
+  font-size: 0.85em;
+  margin-left: var(--space-2);
+}
+
+/* Credential Badge */
+.skills__badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: var(--space-2);
+  padding: 0 var(--space-2);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  background: var(--color-accent-muted);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+}

@@ -57,6 +57,48 @@
   border-bottom-color: var(--color-accent);
 }
 
+.palette__notice {
+  margin: var(--space-2);
+  padding: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-warning);
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-warning);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.palette__notice-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.palette__notice-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.palette__notice-dismiss {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  border-radius: var(--radius-sm);
+  padding: 1px var(--space-2);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--text-xs);
+}
+
+.palette__notice-dismiss:hover {
+  color: var(--color-text);
+  border-color: var(--color-text-muted);
+}
+
+
 .palette__results {
   list-style: none;
   margin: 0;

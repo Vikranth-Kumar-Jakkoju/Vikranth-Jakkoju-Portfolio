@@ -11,10 +11,10 @@ const achievements = [
   },
   {
     id: "codechef-daily-streak-bronze",
-    name: "Daily Streak - Bronze Badge - CodeChef",
+    name: "CodeChef Bronze",
     platform: "CodeChef",
     description:
-      "Awarded for maintaining a continuous daily solving streak, reflecting persistence and dedication to technical improvement.",
+      "Recognized with a Bronze 5-day coding-streak badge on CodeChef.",
     image: "/achievements/Bronze Streak Badge - CodeChef.png",
     profileUrl: "https://www.codechef.com/users/h5c_1512",
   },
@@ -56,19 +56,19 @@ const achievements = [
   },
   {
     id: "hackerrank-cpp-bronze",
-    name: "C++ Bronze - HackerRank",
+    name: "C++ Badge - HackerRank",
     platform: "HackerRank",
     description:
-      "Validated foundational C++ skills including syntax, memory basics, and OOP principles.",
+      "HackerRank language proficiency badge for C++.",
     image: "",
     profileUrl: "https://www.hackerrank.com/profile/jakkojuvikranth",
   },
   {
     id: "hackerrank-python-bronze",
-    name: "Python Bronze - HackerRank",
+    name: "Python Badge - HackerRank",
     platform: "HackerRank",
     description:
-      "Validated core Python competency including data types, control flow, and functions.",
+      "HackerRank language proficiency badge for Python.",
     image: "",
     profileUrl: "https://www.hackerrank.com/profile/jakkojuvikranth",
   },

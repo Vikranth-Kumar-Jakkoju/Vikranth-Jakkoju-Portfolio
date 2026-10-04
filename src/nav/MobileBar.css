@@ -39,6 +39,13 @@
   color: var(--color-accent);
 }
 
+.mobile-bar__btn.is-active {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-accent-muted);
+}
+
+
 .nav-backdrop {
   display: none;
 }
