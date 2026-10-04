@@ -1,4 +1,5 @@
 import {
+  achievementHighlights,
   certificationHighlights,
   education,
   experience,
@@ -33,6 +34,8 @@ export const commandRegistry = {
             <span>List certifications and credentials</span>
             <span className="terminal-output__cmd">leetcode</span>
             <span>Display DSA problem-solving statistics</span>
+            <span className="terminal-output__cmd">achievements</span>
+            <span>Show badges and hackathons</span>
             <span className="terminal-output__cmd">resume</span>
             <span>Open or download résumé</span>
             <span className="terminal-output__cmd">contact</span>
@@ -215,6 +218,22 @@ export const commandRegistry = {
           >
             Open LeetCode Profile ↗
           </a>
+        </div>
+      ),
+    }),
+  },
+  achievements: {
+    name: "achievements",
+    description: "Display coding badges and technical activities",
+    execute: () => ({
+      output: (
+        <div className="terminal-output__achievements">
+          <p className="terminal-output__title">Achievements &amp; Activities:</p>
+          <ul className="terminal-output__list">
+            {achievementHighlights.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
         </div>
       ),
     }),

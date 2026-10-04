@@ -228,6 +228,44 @@ export const hackathonsAndEvents = [
   "CBIT COSC Hackweek (Jul 2026)",
   "AI Impact Summit Buildathon",
   "Google Solution Challenge 2026",
+  "HICON Club and COSC at CBIT",
+];
+
+export const codingProfiles = [
+  {
+    id: "leetcode",
+    name: "LeetCode",
+    badge: "100+ Day Streak (2025)",
+    stats: "400+ Problems Solved",
+    sub: "Active streak in 2025; 50+ day badges in 2025 & 2026",
+    badges: [
+      "100+ Day Streak (2025)",
+      "50+ Day Badge (2025)",
+      "50+ Day Badge (2026)",
+    ],
+    profileUrl: links.leetcode,
+    icon: "⚡",
+  },
+  {
+    id: "hackerrank",
+    name: "HackerRank",
+    badge: "Silver Level",
+    stats: "Problem Solving Silver",
+    sub: "Python & C++ badges verified",
+    badges: ["Problem Solving Silver", "Python Badge", "C++ Badge"],
+    profileUrl: links.hackerrank,
+    icon: "★",
+  },
+  {
+    id: "codechef",
+    name: "CodeChef",
+    badge: "Bronze Level",
+    stats: "Bronze Badges",
+    sub: "Problem Solver & Daily Streak",
+    badges: ["Problem Solver Bronze", "Daily Streak Bronze"],
+    profileUrl: links.codechef,
+    icon: "◈",
+  },
 ];
 
 export const achievementHighlights = [
@@ -260,7 +298,8 @@ export const sectionAnchors = {
   skills: "TechnicalArsenal",
   experience: "Experience",
   projects: "Projects",
-  leetcode: "Achievements",
+  leetcode: "LeetCode",
+  achievements: "Achievements",
   certifications: "Certifications",
   contact: "ContantMe",
 };
@@ -278,6 +317,12 @@ export const sections = [
   },
   { id: "projects", label: "Projects", file: "projects/", command: "projects" },
   { id: "leetcode", label: "LeetCode", file: "leetcode.ts", command: "leetcode" },
+  {
+    id: "achievements",
+    label: "Achievements",
+    file: "achievements/",
+    command: "achievements",
+  },
   {
     id: "certifications",
     label: "Certifications",
@@ -350,6 +395,7 @@ const content = {
   experience,
   projects,
   leetcode,
+  codingProfiles,
   hackathonsAndEvents,
   achievementHighlights,
   certificationHighlights,
