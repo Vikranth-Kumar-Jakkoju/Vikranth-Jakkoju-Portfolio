@@ -108,6 +108,8 @@ function About() {
               <img
                 src={person.photo}
                 alt={`Photo of ${person.name}`}
+                loading="lazy"
+                decoding="async"
                 className="about__avatar-img"
               />
             ) : (
