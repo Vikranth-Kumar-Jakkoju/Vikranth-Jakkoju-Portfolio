@@ -190,14 +190,32 @@
 }
 
 .project-card__repo-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   color: var(--color-info);
   text-decoration: none;
   overflow-wrap: anywhere;
-  word-break: break-all;
+  word-break: normal;
   transition: color var(--transition-fast);
 }
 
-.project-card__repo-link:hover {
+.project-card__repo-owner {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  line-height: var(--leading-tight);
+}
+
+.project-card__repo-name {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-info);
+  line-height: var(--leading-tight);
+  transition: color var(--transition-fast);
+}
+
+.project-card__repo-link:hover .project-card__repo-name {
   color: var(--color-accent);
   text-decoration: underline;
 }

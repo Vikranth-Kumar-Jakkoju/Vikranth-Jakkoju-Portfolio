@@ -45,10 +45,13 @@ function Projects() {
         {/* Project Cards Grid (Single-col mobile, 2-col wide screens) */}
         <div className="projects__grid">
           {projects.map((project) => {
-            const repoDisplay =
+            const fullRepo =
               project.repoFullName ||
               project.repoUrl?.replace("https://github.com/", "") ||
               `Vikranth-Kumar-Jakkoju/${project.name}`;
+            const [owner, repoName] = fullRepo.includes("/")
+              ? fullRepo.split("/")
+              : ["Vikranth-Kumar-Jakkoju", project.name];
 
             return (
               <article
@@ -56,7 +59,7 @@ function Projects() {
                 className="project-card"
                 aria-labelledby={`project-title-${project.id}`}
               >
-                {/* Repo Card Header: Folder icon + Repo as owner/name + Public badge */}
+                {/* Repo Card Header: Folder icon + Repo as owner / name + Public badge */}
                 <div className="project-card__header">
                   <span className="project-card__icon" aria-hidden="true">
                     📁
@@ -70,9 +73,14 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-card__repo-link"
-                      aria-label={`${project.name} repository: ${repoDisplay} (opens in a new tab)`}
+                      aria-label={`${project.name} repository: ${fullRepo} (opens in a new tab)`}
                     >
-                      {repoDisplay}
+                      <span className="project-card__repo-owner">
+                        {owner} /
+                      </span>
+                      <span className="project-card__repo-name">
+                        {repoName}
+                      </span>
                     </a>
                   </h3>
                   <span className="project-card__visibility" aria-hidden="true">
