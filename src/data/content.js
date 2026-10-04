@@ -164,36 +164,41 @@ export const projects = [
   {
     id: "foodexpress",
     name: "FoodExpress",
+    repoFullName: "Vikranth-Kumar-Jakkoju/foodexpress",
     tagline: "MERN food delivery platform",
     description:
-      "End-to-end food delivery app: menu browsing, cart, orders, JWT auth, and modular REST APIs with full MongoDB CRUD.",
-    stack: ["React", "Node.js", "Express", "MongoDB", "JWT", "REST"],
+      "Menu browsing, cart, order management, JWT-based auth, and modular RESTful APIs with full MongoDB CRUD.",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "REST API"],
     repoUrl: "https://github.com/Vikranth-Kumar-Jakkoju/foodexpress",
-    liveUrl: null, // TODO: add live demo if deployed
+    liveUrl: null,
   },
   {
     id: "portfolio",
     name: "Personal Portfolio",
+    repoFullName: "Vikranth-Kumar-Jakkoju/Vikranth-Jakkoju-Portfolio",
     tagline: "React + Vite SPA on Vercel",
     description:
-      "This site — React SPA with CI/CD on Vercel. Currently getting a terminal-themed UI overhaul.",
-    stack: ["React", "Vite", "CSS", "Vercel", "CI/CD"],
+      "Responsive single-page application with automated CI/CD deployments via GitHub.",
+    stack: ["React.js", "Vite", "JavaScript", "CSS3", "Vercel", "CI/CD"],
     repoUrl: "https://github.com/Vikranth-Kumar-Jakkoju/Vikranth-Jakkoju-Portfolio",
     liveUrl: "https://vikranth-jakkoju-portfolio.vercel.app",
   },
   {
     id: "coffee-machine",
     name: "Coffee Machine Simulator",
+    repoFullName: "Vikranth-Kumar-Jakkoju/CoffeeMachineProject",
     tagline: "Java OOP capstone-style project",
     description:
-      "Coffee machine simulation using encapsulation, inheritance, and polymorphism — the OOP trilogy, caffeinated.",
-    stack: ["Java", "OOP"],
+      "Multi-class architecture simulating coffee brewing using core OOP principles: encapsulation, inheritance, and polymorphism.",
+    stack: ["Java", "OOP", "Multi-Class Architecture"],
     repoUrl: "https://github.com/Vikranth-Kumar-Jakkoju/CoffeeMachineProject",
     liveUrl: null,
   },
   {
     id: "study-planner",
     name: "Interactive Study Planner",
+    repoFullName:
+      "Vikranth-Kumar-Jakkoju/Interactive-Study-Planner-Website",
     tagline: "Personalized academic management web app",
     description:
       "Responsive study planner for semester progress, subject-wise workload, exam timetables, and batch schedules — built for a busy semester instead of scattered notes.",
