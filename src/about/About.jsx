@@ -103,6 +103,7 @@ function About() {
 
           {/* Profile photo slot */}
           <div className="about__avatar-card">
+            {/* Profile photo: place photo in /public (e.g. /profile.jpg) and set person.photo in src/data/content.js */}
             {person.photo ? (
               <img
                 src={person.photo}
@@ -113,18 +114,16 @@ function About() {
               <div
                 className="about__avatar-placeholder"
                 role="img"
-                aria-label={`Profile placeholder for ${person.name} (TODO: add profile photo to /public)`}
+                aria-label={`Terminal avatar for ${person.name}`}
               >
                 <div className="about__avatar-terminal">
                   <span className="about__avatar-prompt" aria-hidden="true">
                     &gt; whoami --avatar
                   </span>
-                  <div className="about__avatar-icon" aria-hidden="true">
-                    👨‍💻
+                  <div className="about__avatar-glyph" aria-hidden="true">
+                    <span className="about__avatar-monogram">VJ</span>
                   </div>
-                  <span className="about__avatar-todo">
-                    // TODO: add photo to /public
-                  </span>
+                  <span className="about__avatar-tag">~/developer</span>
                   <span className="about__avatar-name">{person.name}</span>
                 </div>
               </div>

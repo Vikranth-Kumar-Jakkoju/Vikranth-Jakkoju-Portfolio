@@ -74,12 +74,5 @@ const achievements = [
   },
 ];
 
-/** Legacy shape for existing Achievements.jsx until Step 8. */
-export const legacyAchievements = achievements.map((item) => ({
-  name: item.name,
-  platform: item.platform,
-  description: item.description,
-  location: item.image,
-}));
-
 export default achievements;
+

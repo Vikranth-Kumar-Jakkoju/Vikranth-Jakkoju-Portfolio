@@ -268,16 +268,8 @@ export const codingProfiles = [
   },
 ];
 
-export const achievementHighlights = [
-  "400+ LeetCode problems solved",
-  "100+ day LeetCode streak (2025)",
-  "50+ day LeetCode badges (2025, 2026)",
-  "HackerRank Silver (Problem Solving); Python · C++ badges",
-  "CodeChef Bronze",
-  "HICON Club & COSC, CBIT",
-];
-
 export const certificationHighlights = [
+
   "Oracle Cloud Infrastructure 2025 AI Foundations Associate",
   "MongoDB Associate Developer",
   "Programming using Java (Infosys Springboard)",
@@ -403,7 +395,6 @@ const content = {
   leetcode,
   codingProfiles,
   hackathonsAndEvents,
-  achievementHighlights,
   certificationHighlights,
   sectionAnchors,
   sections,

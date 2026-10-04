@@ -337,24 +337,5 @@ const certifications = [
   },
 ];
 
-/** Legacy field names for existing Certifications.jsx until Step 8 rebuild. */
-export function toLegacyCert(cert) {
-  const image =
-    cert.image && cert.image.startsWith("TODO:") ? "" : cert.image;
-  return {
-    name: cert.name,
-    location: image,
-    cid: cert.credentialId,
-    clink: cert.verifyUrl,
-    description: cert.description,
-    featured: cert.featured,
-  };
-}
-
-export const legacyCertifications = certifications.map(toLegacyCert);
-
-export const featuredCertifications = certifications.filter(
-  (cert) => cert.featured,
-);
-
 export default certifications;
+
