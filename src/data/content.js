@@ -300,7 +300,20 @@ export const sectionAnchors = {
   projects: "Projects",
   leetcode: "LeetCode",
   certifications: "Certifications",
-  contact: "ContantMe",
+  contact: "Contact",
+};
+
+export const contact = {
+  file: "contact.sh",
+  command: "contact",
+  heading: "Get in Touch",
+  subhead:
+    "Open to software engineering internships, entry-level full stack roles, and collaborative projects.",
+  cta: "Whether you have an engineering opportunity, a question about my work, or want to discuss full-stack & AI architecture — my inbox is always open.",
+  location: "Hyderabad, Telangana",
+  email: person.email,
+  resumePath: person.resumePath,
+  status: "Open to software engineering opportunities",
 };
 
 /** Section anchors for nav, command palette, and terminal (Steps 3+). */
@@ -395,6 +408,7 @@ const content = {
   sectionAnchors,
   sections,
   paletteItems,
+  contact,
 };
 
 export default content;

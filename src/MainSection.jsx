@@ -4,7 +4,7 @@ import Experience from './experience/Experience.jsx';
 import Projects from './projects/Projects.jsx';
 import LeetCode from './leetcode/LeetCode.jsx';
 import Certifications from './certifications/Certifications.jsx';
-import Footer from './Components/Footer.jsx';
+import Contact from './contact/Contact.jsx';
 
 function MainSection() {
     return (
@@ -15,7 +15,7 @@ function MainSection() {
             <Projects />
             <LeetCode />
             <Certifications />
-            <Footer></Footer>
+            <Contact />
         </>
     );
 }

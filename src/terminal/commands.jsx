@@ -260,8 +260,14 @@ export const commandRegistry = {
   contact: {
     name: "contact",
     description: "Display email and profiles",
-    execute: () => ({
-      output: (
+    execute: (_args, { reducedMotion } = {}) => {
+      if (typeof window !== "undefined") {
+        setTimeout(() => {
+          scrollToSection(`#${sectionAnchors.contact}`, reducedMotion);
+        }, 100);
+      }
+      return {
+        output: (
         <div className="terminal-output__contact">
           <p className="terminal-output__title">Contact & Profiles:</p>
           <p>
@@ -317,7 +323,8 @@ export const commandRegistry = {
           </div>
         </div>
       ),
-    }),
+    };
+  },
   },
   clear: {
     name: "clear",
