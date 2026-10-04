@@ -137,7 +137,7 @@ export const experience = [
     role: "Industrial Trainee",
     org: "Pegasystems × SmartBridge (National Internship Program)",
     period: "Aug – Sep 2026",
-    dateTime: "2026-08/2026-09",
+    dateTime: "2026-08",
     certId: "PEGA-SW-NIP-2026-134",
     tags: ["AICTE NEAT", "National Internship Program"],
     bullets: [
