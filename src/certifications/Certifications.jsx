@@ -57,11 +57,9 @@ function getCategory(item) {
     return "Cloud / AI";
   }
 
-  if (name.includes("database") || name.includes("mongodb")) {
-    return "Databases";
-  }
-
   if (
+    name.includes("database") ||
+    name.includes("mongodb") ||
     name.includes("data science") ||
     name.includes("machine learning") ||
     name.includes("power bi") ||
@@ -69,7 +67,7 @@ function getCategory(item) {
     name.includes("analytics") ||
     name.includes("dashboards")
   ) {
-    return "Data & Analytics";
+    return "Data & Databases";
   }
 
   if (
@@ -153,8 +151,7 @@ export function Certifications() {
     const cats = [
       "All",
       "Cloud / AI",
-      "Databases",
-      "Data & Analytics",
+      "Data & Databases",
       "Programming",
       "Internships",
       "Coding Badges",
