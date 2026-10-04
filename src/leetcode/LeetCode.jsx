@@ -22,9 +22,9 @@ const statTiles = [
   },
   {
     id: "badges",
-    value: "3",
-    label: "Consistency Badges",
-    sub: "50+ day badges in 2025 & 2026",
+    value: "2",
+    label: "50+ Day Badges",
+    sub: "One badge each in 2025 and 2026",
   },
   {
     id: "hackerrank",
