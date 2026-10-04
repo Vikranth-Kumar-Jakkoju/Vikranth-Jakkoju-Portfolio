@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vikranth-jakkoju-portfolio.vercel.app/sitemap.xml
