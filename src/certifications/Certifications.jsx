@@ -46,7 +46,7 @@ function getCategory(item) {
   }
 
   if (
-    name.includes("ai") ||
+    /\bai\b/.test(name) ||
     name.includes("cloud") ||
     name.includes("devops") ||
     name.includes("emerging tech") ||
@@ -57,16 +57,19 @@ function getCategory(item) {
     return "Cloud / AI";
   }
 
+  if (name.includes("database") || name.includes("mongodb")) {
+    return "Databases";
+  }
+
   if (
     name.includes("data science") ||
-    name.includes("database") ||
-    name.includes("mongodb") ||
+    name.includes("machine learning") ||
     name.includes("power bi") ||
     name.includes("tableau") ||
     name.includes("analytics") ||
     name.includes("dashboards")
   ) {
-    return "Databases";
+    return "Data & Analytics";
   }
 
   if (
@@ -151,6 +154,7 @@ export function Certifications() {
       "All",
       "Cloud / AI",
       "Databases",
+      "Data & Analytics",
       "Programming",
       "Internships",
       "Coding Badges",
